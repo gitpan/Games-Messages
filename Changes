@@ -1,5 +1,10 @@
 Revision history for Perl extension Games::Messages.
 
+0.03  
+	- added META.yml
+	- Perl required version is now 5.006 (was 5.008)
+	- minor changes in the documentation
+
 0.02  Wed May 13 14:16:41 2004
 	- slight changes; improved documentation
 

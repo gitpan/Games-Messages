@@ -1,4 +1,4 @@
-Games/Messages version 0.02
+Games/Messages version 0.03
 ===========================
 
 Random messages for common situations in games
@@ -24,10 +24,6 @@ To install this module type the following:
    make
    make test
    make install
-
-DEPENDENCIES
-
-No dependencies.
 
 SEE ALSO
 

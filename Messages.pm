@@ -1,6 +1,6 @@
 package Games::Messages;
 
-use 5.008;
+use 5.006;
 use strict;
 use warnings;
 
@@ -24,7 +24,7 @@ our @EXPORT = qw(
 	player_is_idle player_exagerates
 );
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 my %messages;
 
@@ -136,11 +136,10 @@ Games::Messages - Random messages for common situations in games
 
 Random messages for common situations in games.
 
-=head1 MESSAGE FROM THE AUTHOR
+=head1 TO DO
 
-If you're using this module, please drop me a line to my e-mail. Tell
-me what you're doing with it. Also, feel free to suggest new
-bugs^H^H^H^H^H features.
+I need to think a little bit more about this module and come up with a
+"to do list". Suggestions are welcome.
 
 =head1 AUTHOR
 
