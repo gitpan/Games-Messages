@@ -24,20 +24,25 @@ our @EXPORT = qw(
 	player_is_idle player_exagerates
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my %messages;
 
 BEGIN {
   %messages = (
     p_wins => [ ['PLAYER'],
-      '<PLAYER> wins',
-      '<PLAYER> really knows how to handle the game',
+      '<PLAYER> wins.',
+      '<PLAYER> really knows how to handle the game.',
+      '<PLAYER> amazingly wins.',
+      'Hurray for <PLAYER>!',
     ],
     p_lose => [ ['PLAYER'],
       '<PLAYER> loses.',
       '<PLAYER> is gone with the wind.',
       'no more <PLAYER>.',
+      '<PLAYER> sucks.',
+      '<PLAYER> is no more.',
+      'No more <PLAYER>.',
     ],
 
     c_b_c =>  [ [],
@@ -53,6 +58,7 @@ BEGIN {
     ],
     p_b_c =>  [ ['PLAYER'],
       '<PLAYER> rulez',
+      'Next time my AI will be better, you\'ll see',
     ],
     p_b_p =>  [ ['WINNER', 'LOSER'],
       '<WINNER> beats the hell out of <LOSER>',
@@ -69,7 +75,8 @@ BEGIN {
 
     p_idle => [ ['PLAYER'],
       'Gone to the bathroom, uh?',
-      'Don\'t you like anymore?',
+      'Don\'t you like me anymore?',
+      'I hope you have a good reason for leaving me here alone.',
     ],
     p_exag => [ ['PLAYER'],
       'Shouldn\'t you, like... go away?',
@@ -131,9 +138,9 @@ Random messages for common situations in games.
 
 =head1 MESSAGE FROM THE AUTHOR
 
-If you're using this module, please drop me a line to my e-mail. Tell me what
-you're doing with it. Also, feel free to suggest new bugs^H^H^H^H^H features
-O:-)
+If you're using this module, please drop me a line to my e-mail. Tell
+me what you're doing with it. Also, feel free to suggest new
+bugs^H^H^H^H^H features.
 
 =head1 AUTHOR
 

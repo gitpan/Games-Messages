@@ -1,16 +1,20 @@
-Games/Messages version 0.01
+Games/Messages version 0.02
 ===========================
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
+Random messages for common situations in games
 
-A README file is required for CPAN modules since CPAN extracts the
-README file from a module distribution so that people browsing the
-archive can use it get an idea of the modules uses. It is usually a
-good idea to provide version information here so that people can
-decide whether fixes for the module are worth downloading.
+  use Games::Messages;
+
+  print player_wins($player);
+  print player_loses($player);
+
+  print computer_beats_computer();
+  print computer_beats_player($player);
+  print player_beats_computer($player);
+  print player_beats_player($winner, $loser);
+
+  print player_is_idle($player);
+  print player_exagerates($player);
 
 INSTALLATION
 
@@ -24,6 +28,10 @@ To install this module type the following:
 DEPENDENCIES
 
 No dependencies.
+
+SEE ALSO
+
+The POD documentation in Messages.pm
 
 COPYRIGHT AND LICENCE
 

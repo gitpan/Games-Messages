@@ -1,5 +1,8 @@
 Revision history for Perl extension Games::Messages.
 
+0.02  Wed May 13 14:16:41 2004
+	- slight changes; improved documentation
+
 0.01  Wed May 13 12:06:41 2004
 	- first version released; still has very few messages
 
