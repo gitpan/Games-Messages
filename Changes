@@ -1,0 +1,9 @@
+Revision history for Perl extension Games::Messages.
+
+0.01  Wed May 13 12:06:41 2004
+	- first version released; still has very few messages
+
+0.01  Wed May 12 22:22:41 2004
+	- original version; created by h2xs 1.22 with options
+		-XAn Games::Messages
+
