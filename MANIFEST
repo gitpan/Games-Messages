@@ -5,3 +5,5 @@ Messages.pm
 README
 t/01-basic.t
 META.yml                                 Module meta-data (added by MakeMaker)
+t/pod.t
+t/pod-coverage.t

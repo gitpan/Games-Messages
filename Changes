@@ -1,6 +1,12 @@
 Revision history for Perl extension Games::Messages.
 
-0.03  
+0.04  Mon Nov 08 01:06:00 2004
+	- added some tests
+	- added some more messages
+	- improved the documentation
+	- added pod.t and pod-coverage.t to the tests directory
+
+0.03  Thu Oct 14 14:12:32 2004
 	- added META.yml
 	- Perl required version is now 5.006 (was 5.008)
 	- minor changes in the documentation

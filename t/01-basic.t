@@ -1,15 +1,39 @@
-# Before `make install' is performed this script should be runnable with
-# `make test'. After `make install' it should work as `perl 1.t'
+use Test::More tests => 28;
+BEGIN { use_ok('Games::Messages',':all') };
 
-#########################
+ok(! player_wins            (                    ) );
+ok(  player_wins            ('Player1'           ) );
+ok(  player_wins            ('Player1', 'Player2') );
 
-# change 'tests => 1' to 'tests => last_test_to_print';
+ok(! player_loses           (                    ) );
+ok(  player_loses           ('Player1'           ) );
+ok(  player_loses           ('Player1', 'Player2') );
 
-use Test::More tests => 1;
-BEGIN { use_ok('Games::Messages') };
+ok(  computer_beats_computer(                    ) );
+ok(  computer_beats_computer('Player1'           ) );
+ok(  computer_beats_computer('Player1', 'Player2') );
 
-#########################
 
-# Insert your test code below, the Test::More module is use()ed here so read
-# its man page ( perldoc Test::More ) for help writing this test script.
+ok(! player_beats_player    (                    ) );
+ok(! player_beats_player    ('Player1'           ) );
+ok(  player_beats_player    ('Player1', 'Player2') );
 
+ok(! computer_beats_player  (                    ) );
+ok(  computer_beats_player  ('Player1'           ) );
+ok(  computer_beats_player  ('Player1', 'Player2') );
+
+ok(! player_beats_computer  (                    ) );
+ok(  player_beats_computer  ('Player1'           ) );
+ok(  player_beats_computer  ('Player1', 'Player2') );
+
+ok(! player_beats_player    (                    ) );
+ok(! player_beats_player    ('Player1'           ) );
+ok(  player_beats_player    ('Player1', 'Player2') );
+
+ok(! player_is_idle         (                    ) );
+ok(  player_is_idle         ('Player1'           ) );
+ok(  player_is_idle         ('Player1', 'Player2') );
+
+ok(! player_exagerates      (                    ) );
+ok(  player_exagerates      ('Player1'           ) );
+ok(  player_exagerates      ('Player1', 'Player2') );
