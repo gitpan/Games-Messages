@@ -20,7 +20,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw(
 );
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 =head1 NAME
 
@@ -99,7 +99,6 @@ person.
 
     # player_loses
     p_lose => [ ['PLAYER'],
-      'no more <PLAYER>.',
       'No more <PLAYER>.',
       '<PLAYER> is gone with the wind.',
       '<PLAYER> is no more.',
